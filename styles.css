@@ -1,0 +1,216 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #06a2fc;
+    color: rgb(0, 0, 0);
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #008cff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.hero {
+    background: url('foto---skoda-kodiaq-2024.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.btn-primary {
+    background-color: #db0404;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.inventory {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.inventory h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.car-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.car-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.car-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.car-item h4 {
+    margin: 15px 0 10px;
+}
+
+.car-item p {
+    font-size: 1.2em;
+    color: #ff6600;
+    margin: 0;
+}
+
+.btn-secondary {
+    background-color: #222;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.about {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.footer-info ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-info ul li a {
+    color: white;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .car-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .car-list {
+        grid-template-columns: 1fr;
+    }
+
+    header, footer {
+        padding: 10px;
+    }
+
+    .hero-text h2 {
+        font-size: 2em;
+    }
+
+    .hero-text p {
+        font-size: 1.2em;
+    }
+}
+
